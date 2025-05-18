@@ -1,22 +1,38 @@
 using System;
+using System.Drawing;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Enter a random number. ");
-        float number_one = float.Parse(Console.ReadLine());
 
-        Console.WriteLine("Enter a second random number. ");
-        float number_two = float.Parse(Console.ReadLine());
+        Console.WriteLine("What is your grade?");
 
-        if (number_one > number_two)
+        int grade = int.Parse(Console.ReadLine());
+
+        if (grade >= 90)
         {
-            Console.WriteLine("Your first number is greater than your second number.");
+            Console.WriteLine("You got an A.");
         }
+
+        else if (grade >= 80)
+        {
+            Console.WriteLine("You got a B.");
+        }
+
+        else if (grade >= 70)
+        {
+            Console.WriteLine("You got a C.");
+        }
+
+        else if (grade >= 60)
+        {
+            Console.WriteLine("You got a D.");
+        }
+
         else
         {
-            Console.WriteLine("Your second number is greater than you first number. ");
+            Console.WriteLine("You got an F.");
         }
     }
 }
