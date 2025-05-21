@@ -13,12 +13,20 @@ class Program
         DisplayResult(userName, squareNum);
     }
 
+    static int PromptUserNumber()
+    {
+        Console.WriteLine("Please enter your favorite number");
+        userNum = int.Parse(Console.ReadLine());
+
+        return userNum;    
+    }
+
     static void DisplayWelcome()
     {
         Console.WriteLine("Welcome to the program.");
     }
     
-    static string PromptUserName(string userName)
+    static string PromptUserName()
     {
         Console.WriteLine("Please enter your name");
         userName = Console.ReadLine();
@@ -26,13 +34,7 @@ class Program
         return userName;
     }   
 
-    static int PromptUserNumber(int userNum)
-    {
-        Console.WriteLine("Please enter your favorite number");
-        userNum = int.Parse(Console.ReadLine());
-
-        return userNum;    
-    }
+    
 
     static int SquareNumber(int userNum)
     {
