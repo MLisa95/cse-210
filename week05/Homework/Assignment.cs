@@ -9,16 +9,6 @@ public class Assignment
         _topic = topic;
     }
 
-    public string GetStudentName()
-    {
-        return _studentName;
-    }
-
-    public string GetTopic()
-    {
-        return _topic;
-    }
-
     public string GetSummary()
     {
         return $"{_topic} by {_studentName}";
