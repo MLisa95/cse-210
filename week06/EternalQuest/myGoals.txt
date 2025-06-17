@@ -1,0 +1,1 @@
+SimpleGoal:Sing a song|Perform in front of a largee crowd|1000|False
