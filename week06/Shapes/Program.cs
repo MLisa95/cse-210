@@ -12,6 +12,7 @@ class Program
 
         foreach (Shape shape in shapes)
         {
+            Console.WriteLine($"Shape: {shape.GetType().Name}");  // C# built-in to get class name
             Console.WriteLine($"Color: {shape.GetColor()}");
             Console.WriteLine($"Area: {shape.GetArea():0.00}\n");
         }
